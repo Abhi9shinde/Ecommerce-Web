@@ -344,3 +344,134 @@ footer .icon #twitter:hover {
 #trouser {
     border: none;
 }
+
+@media (max-width:900px) {
+
+
+    #navlink {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        /* top: 0; */
+        top: -400px;
+        height: 300px;
+        width: 300px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        padding: 80px 0 0 20px;
+        transition: 0.3s;
+    }
+
+    #navlink.active {
+        top: 0px;
+    }
+
+    #navlink li {
+        margin-bottom: 25px;
+    }
+
+    #res {
+        display: flex;
+        color: black;
+    }
+
+    #close {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 37px;
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    #features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-bottom: grey 1px solid;
+    }
+
+    #features .box1 img {
+        height: 20em;
+        width: 15em;
+        transition: all 0.7s;
+    }
+
+    #shirt,
+    #two_piece,
+    #trouser,
+    #men_shoes,
+    #women_shoes {
+        padding-bottom: 0.75em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-bottom: grey 1px solid;
+    }
+
+    #shirt .pro img,
+    #two_piece .pro img,
+    #trouser .pro img,
+    #men_shoes .pro img,
+    #women_shoes .pro img {
+        height: 10em;
+        width: 7em;
+    }
+}
+
+@media (max-width:500px) {
+
+    #features {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #features .box1 button {
+        margin-bottom: 10px;
+    }
+
+    #shirt,
+    #two_piece,
+    #trouser,
+    #men_shoes,
+    #women_shoes {
+        flex-direction: column;
+    }
+
+    #shirt .pro img,
+    #two_piece .pro img,
+    #trouser .pro img,
+    #men_shoes .pro img,
+    #women_shoes .pro img {
+        margin-top: 20px;
+    }
+
+    #newsletter input {
+        width: 200px;
+    }
+
+    #prodet {
+        display: flex;
+        flex-direction: column;
+        padding-left: 70px;
+    }
+
+    #prodet .single-product {
+        width: 50%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #prodet .single-pro-detail input {
+        margin-bottom: 15px;
+    }
+
+    #prodet .single-pro-detail h4 {
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+    }
+}
