@@ -486,6 +486,29 @@ footer .icon #twitter:hover {
 }
 
 @media (max-width:400px) {
+    #navlink {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        /* top: 0; */
+        top: -300px;
+        z-index: 999;
+        height: auto;
+        width: 100px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        padding: 80px 0 0 20px;
+        transition: 0.3s;
+    }
+
+    #navlink.active {
+        top: 0px;
+        display: flex;
+        /* Show when active */
+    }
+
     #main {
         height: 840px;
         border: none;
