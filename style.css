@@ -17,6 +17,32 @@ body {
 
 }
 
+.hidden_left {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show_left {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.hidden_up {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(-100%);
+    transition: all 1.5s;
+}
+
+.show_up {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
 #main {
     height: 840px;
     border: none;
@@ -81,7 +107,7 @@ h1 {
     display: none;
 }
 
-.message {
+#message {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,18 +122,17 @@ h1 {
     padding-bottom: 1em;
 }
 
-.message #btn1 {
+#message #btn1 {
     border: 1px white solid;
     border-radius: 1.75em;
     background: transparent;
     color: white;
-    backdrop-filter: blur(10px);
     font-size: 15px;
     padding: 1em 5em;
     transition: 0.1ms border ease-in;
 }
 
-.message #btn1:hover {
+#message #btn1:hover {
     border: 2.15px white solid;
     cursor: pointer;
 }

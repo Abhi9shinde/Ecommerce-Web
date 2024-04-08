@@ -12,6 +12,32 @@ body {
 
 }
 
+.hidden_left {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show_left {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.hidden_up {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(-100%);
+    transition: all 1.5s;
+}
+
+.show_up {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
 h1 {
     font-family: "Kalnia", serif;
     font-weight: 500;
