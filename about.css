@@ -333,10 +333,11 @@ footer .icon #twitter:hover {
         align-items: flex-start;
         position: absolute;
         /* top: 0; */
-        top: -400px;
-        height: 300px;
+        top: -300px;
+        z-index: 999;
+        height: auto;
         width: 100px;
-        background-color: transparent;
+        background-color: gray;
         backdrop-filter: blur(10px);
         padding: 80px 0 0 20px;
         transition: 0.3s;
@@ -344,10 +345,16 @@ footer .icon #twitter:hover {
 
     #navlink.active {
         top: 0px;
+        display: flex;
+        /* Show when active */
     }
 
     #navlink li {
         margin-bottom: 25px;
+    }
+
+    #message h2 {
+        color: black;
     }
 
     #close {
